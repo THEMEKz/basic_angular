@@ -1,0 +1,13 @@
+.divMap{
+    position: absolute;
+    top: 100px;
+    bottom: 100px;
+    left: 30px;
+    right: 300px;
+}
+
+.go-to-box{
+    position: absolute;
+    right: 40px;
+    top: 100px;
+}

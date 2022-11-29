@@ -1,0 +1,37 @@
+.postBox {
+    padding: 30;
+    border: 1px solid #808080;
+    border-radius: 40px;
+    padding: 50px;
+    size: 50px;
+    /* padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px; */
+    /* margin: 50px; */
+    margin-right: 1200px;
+    margin-left: 50px;
+    background-color: rgb(65, 217, 255);
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.31);
+}
+
+.add-comment-box{
+    padding: 30;
+    border: 1px solid #808080;
+    border-radius: 40px;
+    padding: 50px;
+    size: 50px;
+    /* padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px; */
+    /* margin: 50px; */
+    margin-right: 1200px;
+    margin-left: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.31);
+}
+
+.btn-in-newcomment{
+  padding-top: 10px;
+}

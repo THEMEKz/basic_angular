@@ -1,0 +1,32 @@
+<div class="go-to-box">
+    <div>
+        <h3>
+            Go to position
+        </h3>
+    </div>
+    <div>
+        <span class="p-float-label">
+            <input id="float-input" type="text" pInputText [(ngModel)]="lat"> 
+            <label for="float-input">lat</label>
+        </span>
+        <br>
+    </div>
+    <div>
+        <span class="p-float-label">
+            <input id="float-input" type="text" pInputText [(ngModel)]="long"> 
+            <label for="float-input">long</label>
+        </span>
+        <br>
+    </div>
+    <div>
+        <button pButton pRipple type="button" label="Locate" (click)="fn_locate()"></button>
+        <br>
+    </div>
+    <div>
+        <h3>Position : {{position}}</h3>
+        <!-- {{position}} -->
+    </div>
+</div>
+
+<div class="divMap" #divMap></div>
+

@@ -1,0 +1,32 @@
+<div *ngIf="isDisplay" class="comment_box">
+    <div class="commentBox">
+        <div>
+            <h2>{{ name }}</h2>
+            <p>{{ comment }}</p>
+            <br>
+        </div>
+        <div class="btn-in-commentbox">
+            <button pButton pRipple type="button" label="EDIT" class="p-button-text" (click)="showMore()"></button>
+            <button pButton pRipple type="button" label="DELETE" class="p-button-danger p-button-text" (click)="stopDisplay()"></button>
+        </div>
+        <div *ngIf="isShowMore">
+            <div>
+                <span class="p-float-label">
+                    <input id="float-input" type="text" pInputText [(ngModel)]="editName" size="64"> 
+                    <label for="float-input">Name</label>
+                </span>
+
+                <br><br>
+                <span class="p-float-label">
+                    <textarea id="float-input" rows="5" [cols]="66" pInputTextarea [(ngModel)]="editComment"></textarea>
+                    <label for="float-input">Summary</label>
+                </span>
+            </div>
+            <div class="btn-done-in-edit">
+                <button pButton pRipple icon="pi pi-check" type="button" label="DONE" class="p-button-success" (click)="doEdit()"></button>         
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>

@@ -1,0 +1,102 @@
+@media screen and (device-width:1920px){
+    .box1{
+        background-color: rgb(255, 0, 0);
+        width: 31%;
+        height: 400px;
+        float: left;
+        margin: 1%;
+    }
+    
+    .box2{
+        background-color: rgb(0, 255, 21);
+        width: 32%;
+        height: 400px;
+        float: left;
+        margin: 1%;
+    }
+    
+    .box3{
+        background-color: rgb(17, 0, 255);
+        width: 31%;
+        height: 400px;
+        float: left;
+        margin: 1%;
+    }
+    
+    .box4{
+        background-color: aqua;
+        width: 98%;
+        height: 400px;
+        float: left;
+        margin: 1%;
+    }
+}
+
+@media screen and (max-width:820px){
+    .box1{
+        background-color: rgb(255, 0, 0);
+        width: 48%;
+        height: 400px;
+        float: left;
+        margin: 1%;
+    }
+    
+    .box2{
+        background-color: rgb(0, 255, 21);
+        width: 48%;
+        height: 400px;
+        float: left;
+        margin: 1%;
+    }
+    
+    .box3{
+        background-color: rgb(17, 0, 255);
+        width: 48%;
+        height: 400px;
+        float: left;
+        margin: 1%;
+    }
+    
+    .box4{
+        background-color: aqua;
+        width: 48%;
+        height: 400px;
+        float: left;
+        margin: 1%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .box1{
+        background-color: rgb(255, 0, 0);
+        width: 98%;
+        height: 400px;
+        float: left;
+        margin: 1%;
+    }
+    
+    .box2{
+        background-color: rgb(0, 255, 21);
+        width: 98%;
+        height: 400px;
+        float: left;
+        margin: 1%;
+    }
+    
+    .box3{
+        background-color: rgb(17, 0, 255);
+        width: 98%;
+        height: 400px;
+        float: left;
+        margin: 1%;
+    }
+    
+    .box4{
+        background-color: aqua;
+        width: 98%;
+        height: 400px;
+        float: left;
+        margin: 1%;
+    }
+}
+

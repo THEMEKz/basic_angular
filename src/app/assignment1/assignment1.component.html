@@ -1,0 +1,30 @@
+<div>
+    <div class="postBox">
+        <h2>POST : ..................</h2>
+    </div>
+    <br><br>
+    <div *ngFor="let n of names ; index as i">
+        <div *ngFor="let c of comments ; index as j">
+            <div *ngIf="i===j">
+                <app-comment [comment]="c" [name]="n"></app-comment>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="add-comment-box">
+        <div>
+            <h2>NEW COMMENT</h2>
+        </div>
+        <div>
+            <h5>Name</h5>
+            <input type="text" size="64" pInputText [(ngModel)]="newName"/><br>
+            
+            <h5>Comment</h5>
+            <textarea [rows]="5" [cols]="66" pInputTextarea [autoResize]="true" [(ngModel)]="newComment" class="textArea"></textarea>
+        </div>
+        <div class="btn-in-newcomment">
+            <button pButton pRipple type="button" label="COMMENT" class="p-button-success" (click)="addComment()"></button>
+            <button pButton pRipple type="button" label="CLEAR" class="p-button-danger" (click)="clearComment()"></button>
+        </div>
+    </div>
+</div>

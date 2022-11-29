@@ -1,0 +1,60 @@
+<div class="divMap" #divMap></div>
+
+
+<div class="nameCity">
+    <table>
+        <tr>
+            <th>STATE_NAME</th>
+            <th>SUB_REGION</th>
+            <th>STATE_ABBR</th>
+        </tr>
+        <tr *ngFor="let sn of data">
+            <td (click)="doStateClick(sn.state_name)" class="btn-to-city">{{sn.state_name}}</td>
+            <td>{{sn.sub_region}}</td>
+            <td>{{sn.state_abbr}}</td>
+        </tr>
+    </table>
+</div>
+
+
+
+<!-- <div class="nameCity"> -->
+<!-- <p-table [value]="data" [tableStyle]="{'min-width': '50rem'}" class="nameCity">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>State_name</th>
+            <th>Sub_region</th>
+            <th>state_abbr</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+        <tr *ngFor="let sn of data">
+            <td (click)="doStateClick(sn.state_name)" class="">{{sn.state_name}}</td>
+            <td> {{sn.sub_region}}</td>
+            <td>{{sn.state_abbr}}</td>
+            
+        </tr>
+    </ng-template>
+</p-table> -->
+
+<!-- <p-table>
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Vin</th>
+
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-car>
+        <tr>
+            <td>A</td>
+            <td>A</td>
+
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>A</td>
+
+        </tr>
+    </ng-template>
+</p-table> -->
+

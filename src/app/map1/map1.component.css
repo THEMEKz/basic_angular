@@ -1,0 +1,59 @@
+.divMap{
+    position: absolute;
+    top: 100px;
+    bottom: 30px;
+    left: 30px;
+    right: 450px;
+}
+
+.citenamebox {
+    position: absolute;
+    right: 0;
+}
+
+
+
+.click_btn{
+    cursor: pointer;
+}
+
+th, td {
+	/* border: 1px solid black; */
+	padding: 8px;
+}
+
+th {
+    color: white;
+    background-color: black;
+    position: -webkit-sticky;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+
+
+table{
+    border-collapse: collapse;
+    position: relative;
+}
+
+tr:hover {
+    background-color: aqua;
+}
+.nameCity {
+    height: 820px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    bottom: 0;
+    
+  }
+
+  .btn-to-city{
+    cursor: pointer;
+    font-weight: bold;
+  }

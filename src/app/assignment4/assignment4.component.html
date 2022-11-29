@@ -1,0 +1,52 @@
+<div class="mainCal">
+    <div class="isDisplay">
+        <div *ngIf="font_num.length==0">
+            {{sym}}&nbsp;
+        </div>
+        <div>
+            &nbsp;{{font_num}}<button pButton pRipple type="button" label="<" class="p-button-rounded" (click)="backSpace()"></button>
+        </div>
+
+    </div>
+
+    <div class="keyCal">
+        <button pButton pRipple type="button" label="1" class="p-button-rounded" (click)="input_num('1')"></button>
+        <button pButton pRipple type="button" label="2" class="p-button-rounded" (click)="input_num('2')"></button>
+        <button pButton pRipple type="button" label="3" class="p-button-rounded" (click)="input_num('3')"></button>
+        <button pButton pRipple type="button" label="<" class="p-button-rounded" (click)="backSpace()"></button>
+        <!-- <button pButton pRipple type="button" label="1" class="p-button-rounded p-button-danger p-button-outlined" (click)="backSpace()"></button> -->
+        <!-- <button pButton pRipple type="button" icon="pi pi-arrow-left" class="p-button-rounded p-button-danger p-button-outlined" (click)="backSpace()"></button> -->
+        <br>
+        <button pButton pRipple type="button" label="4" class="p-button-rounded" (click)="input_num('4')"></button>
+        <button pButton pRipple type="button" label="5" class="p-button-rounded" (click)="input_num('5')"></button>
+        <button pButton pRipple type="button" label="6" class="p-button-rounded" (click)="input_num('6')"></button>
+        <button pButton pRipple type="button" label="+" class="p-button-rounded" (click)="input_sym('+')"></button>
+        <br>
+        <button pButton pRipple type="button" label="7" class="p-button-rounded" (click)="input_num('7')"></button>
+        <button pButton pRipple type="button" label="8" class="p-button-rounded" (click)="input_num('8')"></button>
+        <button pButton pRipple type="button" label="9" class="p-button-rounded" (click)="input_num('9')"></button>
+        <button pButton pRipple type="button" label="-" class="p-button-rounded" (click)="input_sym('-')"></button>
+        <br>
+        <button pButton pRipple type="button" label="0" class="p-button-rounded" (click)="input_num('0')"></button>
+        <!-- <button pButton pRipple type="button" label="." class="p-button-rounded" (click)="input_num('.')"></button> -->
+        <button pButton pRipple type="button" label="/" class="p-button-rounded" (click)="input_sym('/')"></button>
+        <button pButton pRipple type="button" label="x" class="p-button-rounded" (click)="input_sym('*')"></button>
+        <br>
+        <button pButton pRipple type="button" label="C" class="p-button-rounded" (click)="isClear()"></button>
+        <button pButton pRipple type="button" label="=" class="p-button-rounded" (click)="isResult()"></button>
+
+    </div>
+    <!-- <div>
+        <br>
+        <button (click)="input_sym('+')">+</button>
+        <button (click)="input_sym('-')">-</button>
+        <button (click)="input_sym('*')">x</button>
+        <button (click)="input_sym('/')">/</button>
+        <button (click)="backSpace()"><--</button>
+    </div>
+    <div>
+        <br>
+        <button (click)="isResult()">=</button>
+        <button (click)="isClear()">AC</button>
+    </div> -->
+</div>
